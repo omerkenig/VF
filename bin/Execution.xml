@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" thread-count="7">
+  <test name="Promotions" preserve-order="true">
+  		<parameter name="Suite" value="Regression"></parameter>
+		<parameter name="browser" value="EDGE1"></parameter>
+		<parameter name="envcode" value="ENV-31"></parameter>
+		<parameter name="Calendar" value="DEXP_Regression"></parameter>
+	    <classes>
+			<class name="vfro.regression.MainDriver" />
+		</classes>
+	</test>
+	
+	<dependency>
+		<groupId>org.json</groupId>
+		<artifactId>org.json</artifactId>
+		<version>RELEASE</version>
+	</dependency>
+	
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests" thread-count="5">
+  
+	<test name="Browser_Chrome1" preserve-order="true">
+		<parameter name="SuiteName" value="Sanity"></parameter>
+		<parameter name="browser" value="CHROME1"></parameter>  
+		<parameter name="envcode" value="XXX"></parameter>		
+		<classes>
+			<class name="com.vf.functional.buildSanity.BuildSanity" />
+		<!-- 	<methods>
+					<include name="test_MAF011_F01_captureCustomerServiceAddressAndCheckSuccessResponseRecievedFromServiceAvailable" />
+					<include name="test_MAF011_F02_viewTheCableInternetOffersAndCheckThatSelectedOfferSuccessfullyAddedCart" />
+					<include name="test_MAF011_F03_ValidateRCandOCofProductAddedinShoppingCartCreatedOnProvidedServiceAddress" />
+					<include name="test_MAF011_F04_captureCustomerDetailCheckoutScreens" />
+					<include name="test_MAF011_F05_SCN01_checkCustomerDetailsAreCreatedSuccessfully" />
+					<include name="test_MAF011_F06_SCN02_validateOrderSummaryTotalPriceIsShowing" />
+					<include name="test_MAF013_F01_validateOrderSummaryForEquipment" />
+					<include name="test_MAF023_F01_som1_Docsis" />
+					<include name="test_MAF023_F02_som2_Axiros" />
+			</methods>
+			</class> -->
+		</classes>
+	</test> 	
+</suite>
